@@ -3,7 +3,7 @@ resource "aws_instance" "UbuntuServer" {
     ami = "ami-00782a7608c7fc226"
     #availability_zone = "ap-south-1"
     instance_type = "t2.micro"
-    key_name = "ubuntu_key"
+    key_name = "MY_NEW_ubuntu_key"
     subnet_id = "${aws_subnet.subnet1-public.id}"
     vpc_security_group_ids = ["${aws_security_group.allow_all.id}"]
     associate_public_ip_address = true	
