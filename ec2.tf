@@ -1,6 +1,6 @@
 resource "aws_instance" "UbuntuServer" {
     #ami = "${data.aws_ami.my_ami.id}"
-    ami = "ami-04bde106886a53080"
+    ami = "ami-00782a7608c7fc226"
     #availability_zone = "ap-south-1"
     instance_type = "t2.micro"
     key_name = "ubuntu_key"
